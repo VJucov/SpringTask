@@ -1,5 +1,8 @@
 package springTask.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Intern {
     private String name = "Valeria";
 

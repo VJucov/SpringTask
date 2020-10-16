@@ -8,28 +8,28 @@ import springTask.model.Intern;
 import springTask.model.Mentor;
 
 @Configuration
-@ComponentScan
+@ComponentScan(value = "springTask.model")
 public class ConfigClass {
 
-    @Bean
-    public Discipline getDiscipline() {
-        Discipline discipline = new Discipline();
-        discipline.setName("Applications Management");
-        discipline.setMentor(getMentor());
-        return discipline;
-    }
-
-    @Bean
-    public Intern getIntern() {
-        Intern intern = new Intern();
-        return intern;
-    }
-
-    @Bean
-    public Mentor getMentor() {
-        Mentor mentor = new Mentor();
-        mentor.setIntern(getIntern());
-        return mentor;
-    }
+//    @Bean
+//    public Discipline getDiscipline() {
+//        Discipline discipline = new Discipline();
+//        discipline.setName("Applications Management");
+//        discipline.setMentor(getMentor());
+//        return discipline;
+//    }
+//
+//    @Bean
+//    public Intern getIntern() {
+//        Intern intern = new Intern();
+//        return intern;
+//    }
+//
+//    @Bean
+//    public Mentor getMentor() {
+//        Mentor mentor = new Mentor();
+//        mentor.setIntern(getIntern());
+//        return mentor;
+//    }
 
 }
