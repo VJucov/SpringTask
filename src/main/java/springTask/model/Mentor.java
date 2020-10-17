@@ -1,15 +1,11 @@
 package springTask.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Mentor {
-
+    @Autowired
     private Intern intern;
-
-    public Mentor(Intern intern) {
-        this.intern = intern;
-    }
 
     public Intern getIntern() {
         return intern;
