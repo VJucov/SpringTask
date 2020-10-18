@@ -1,10 +1,15 @@
 package springTask.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Discipline {
     private String name = "Applications Management";
+
+    @Autowired
+    @Qualifier("Rustam")
     private Mentor mentor;
 
     public Discipline(Mentor mentor) {

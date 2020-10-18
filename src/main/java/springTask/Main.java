@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(ConfigClass.class);
         Discipline disciplineBean = context.getBean(Discipline.class);
-        System.out.println(disciplineBean.getMentor().getIntern().getName());
+        System.out.println("Intern name: " + disciplineBean.getMentor().getIntern().getName() +
+                "\nMentor name: " + disciplineBean.getMentor().getName());
     }
 }
